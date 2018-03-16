@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>JavasCript</h1>
+  <p>
+    “Jamás es demasiado tarde para intentar lograr aquello que de verdad siempre deseaste.”
+  </p>
+  <script>
+    var arr = [1,2,3,4,2,3,2];
+
+    console.info('forEach');
+    console.time('forEach');
+    arr.forEach(function(elem){
+      console.log(elem*10*10);
+    });
+    console.timeEnd('forEach');
+    console.log(arr);
+    // for
+    console.info('for');
+    console.time('for');
+
+    for(var i=0;i< arr.length; i++){
+      console.log(arr[i]*10*10);
+    }
+    console.timeEnd('for');
+    console.log(arr);
+    //
+  </script>
+</body>
+</html>
