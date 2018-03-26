@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>JavasCript</h1>
+  <p>
+    “Jamás es demasiado tarde para intentar lograr aquello que de verdad siempre deseaste.”
+  </p>
+  <script>
+    /*
+    La funcion map funciona de la misma manera que un forEach con la diferencia de que este, retorna un nuevo arreglo con
+    respecto a una evaluacion dada.
+    */
+    var grades = [77,65,81,92,83];
+    var newGrades = grades.map( elem => elem+=5 );
+    console.log(grades);
+    console.log(newGrades); //Array [ 82, 70, 86, 97, 88 ]
+
+    //Example usign strings
+    var words = ["For","your", "information"];
+    var acronym = words.map( word => word[0] );
+    console.log(acronym.join(""));// Fyi
+  </script>
+</body>
+</html>
