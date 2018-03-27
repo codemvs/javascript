@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>JavasCript</h1>
+  <p>
+    “Jamás es demasiado tarde para intentar lograr aquello que de verdad siempre deseaste.”
+  </p>
+  <script>
+    function esMayorDeEdad(fecha,edad){
+      fecha = fecha || "";
+      edad = edad || 18;
+
+      var dt = new Date();
+      var dia=dt.getDate(),
+          mes=dt.getMonth()+1,
+          anio=dt.getFullYear();
+
+      var fc = fecha.split('/'),
+          edadC = anio - Number(fc[2]);
+
+      if( edad < edadC) return true;
+
+      var res = edadC == edad && Number(fc[1]) <= mes && Number(fc[0])<= dia;
+
+      return res;
+    }
+
+    if(esMayorDeEdad("28/02/2000")){
+      console.log("Es mayor de edad");
+    }else{
+      console.log("Es menor de edad");
+    }
+  </script>
+</body>
+</html>
